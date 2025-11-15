@@ -123,9 +123,10 @@ Execute scripts in the following order:
 4. View_Power_BI.sql
 ```
 
-### **4. Open Power BI Dashboard**
-Located in `power IB/Churn Analysis.pbix`.
----
+### **4. Open Power BI Dashboard****
+```
+power IB/Churn Analysis.pbix
+```
 
 ### **5. Open ML Notebook**
 ```
