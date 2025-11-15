@@ -1,5 +1,5 @@
 
-# 📊 Churn Analysis & Prediction – GitHub Project
+# 📊 Churn Analysis & Prediction
 
 A complete end-to-end **Customer Churn Analysis & Prediction** system leveraging  
 **SQL**, **Power BI**, and **Python (Machine Learning)** to understand churn drivers,  
@@ -131,6 +131,12 @@ power IB/Churn Analysis.pbix
 ### **5. Open ML Notebook**
 ```
 notebooks/Churn Prediction.ipynb
+```
+
+### **6. Reports**
+```
+reports/Presentation.pptx
+reports/README.pdf
 ```
 
 ## 📬 Author
