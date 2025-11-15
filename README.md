@@ -1,43 +1,43 @@
 
 # 📊 Churn Analysis & Prediction – GitHub Project
 
-A complete end‑to‑end **Customer Churn Analysis & Prediction** system leveraging  
-**SQL**, **Python (Machine Learning)**, and **Power BI** to understand churn drivers,  
+A complete end-to-end **Customer Churn Analysis & Prediction** system leveraging  
+**SQL**, **Power BI**, and **Python (Machine Learning)** to understand churn drivers,  
 predict churn probability, and deliver actionable business insights.
 
 ---
 
 ## 🚀 Features
 
-- 🔹 Full ETL Pipeline using SQL  
-- 🔹 Cleaned & Transformed Dataset for BI & ML  
-- 🔹 Machine Learning Model for Churn Prediction  
-- 🔹 Interactive Power BI Dashboard  
-- 🔹 Professional Documentation + Workflow Summary
-
+- 🔹 Full ETL pipeline implemented in SQL to extract, clean, and prepare the churn dataset  
+- 🔹 Data preprocessing, feature engineering, and machine-learning modelling in Python  
+- 🔹 Comparison of multiple models (e.g., logistic regression, random forest, XGBoost)  
+- 🔹 Evaluation using accuracy, F1-score, ROC-AUC, confusion matrix  
+- 🔹 Visual analytics / dashboard (e.g., via Power BI) to present churn patterns and revenue loss  
+- 🔹 Professional documentation and a workflow summary report 
 ---
 
 ## 🧩 Project Structure
 
 ```
+Churn_Prediction/
 ├── data/
-│   ├── dashboard_summary.xlsx
-│   └── (raw/clean data assets)
-│
+│ ├── raw/ ← raw data files (CSV, Excel, etc)
+│ └── clean/ ← cleaned/transformed data ready for modelling
 ├── sql/
-│   ├── Upload_file.sql
-│   ├── Check_Null.sql
-│   ├── Remove_Nulls.sql
-│   └── View_Power_BI.sql
-│
-├── notebooks/
-│   └── Churn Prediction.ipynb
-│
+│ ├── Upload_file.sql ← initial data load into staging
+│ ├── Check_Null.sql ← data quality checks (NULLs, missingness)
+│ ├── Remove_Nulls.sql ← data cleaning / standardisation
+│ └── View_Power_BI.sql ← final views used in dashboard layer
+├── power IB/
+│ └── Churn Analysis.pbix ← Power IB dashboard
+├── notebook/
+│ └── Churn_Prediction.ipynb ← Jupyter notebook with EDA, modelling
 ├── reports/
-│   ├── Unified_Presentation.pptx
-│   └── README.pdf
-│
-└── README.md
+│ ├── Unified_Presentation.pptx ← full presentation of results
+│ └── README.pdf ← PDF version of documentation
+├── requirements.txt ← list of Python dependencies
+└── README.md ← this file
 ```
 
 ---
@@ -61,6 +61,16 @@ Creates:
 - `vw_JoinData`
 
 Used directly in Power BI.
+
+---
+
+## 📈 Power BI Dashboard Insights
+
+- Churn vs Retained customer overview  
+- High-risk customer segments  
+- State-wise churn heatmaps  
+- Revenue loss breakdown  
+- Contract-wise churn patterns  
 
 ---
 
@@ -89,22 +99,14 @@ Used directly in Power BI.
 
 ---
 
-## 📈 Power BI Dashboard Insights
+## Installation & Setup  
+Follow these steps to set up the project environment and run the analyses:
 
-- Churn vs Retained customer overview  
-- High-risk customer segments  
-- State-wise churn heatmaps  
-- Revenue loss breakdown  
-- Contract-wise churn patterns  
-
----
-
-## 📦 Installation & Setup
-
-### **1. Clone this repository**
+### 1. Clone the repository  
 ```
-git clone https://github.com/yourusername/churn-analysis.git
-cd churn-analysis
+git clone https://github.com/JaskarJeyabalan/Churn_Prediction.git  
+cd Churn_Prediction  
+
 ```
 
 ### **2. Install Python dependencies**
@@ -121,22 +123,22 @@ Execute scripts in the following order:
 4. View_Power_BI.sql
 ```
 
-### **4. Open ML Notebook**
+### **4. Open Power BI Dashboard**
+Located in `power IB/Churn Analysis.pbix`.
+---
+
+### **5. Open ML Notebook**
 ```
 notebooks/Churn Prediction.ipynb
 ```
 
-### **5. Open Power BI Dashboard**
-Located in `reports/`.
-
----
-
 ## 📬 Author
 
-**Jaskar Jeyabalan**  
+**Jaskar Jeyabalan S**
+**jaskarjeyabalan@gmail.com**  
 Churn Analytics | SQL | Power BI | Machine Learning  
 
 ---
 
 ## ⭐ Support the Project
-If this project helped you, please ⭐ **star the repository**!
+If you found this project helpful, feel free to ⭐ **star the repository** on GitHub!
