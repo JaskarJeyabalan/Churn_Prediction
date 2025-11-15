@@ -136,7 +136,9 @@ notebooks/Churn Prediction.ipynb
 ## 📬 Author
 
 **Jaskar Jeyabalan S**
+
 **jaskarjeyabalan@gmail.com**  
+
 Churn Analytics | SQL | Power BI | Machine Learning  
 
 ---
