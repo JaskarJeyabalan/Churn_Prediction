@@ -130,7 +130,7 @@ power IB/Churn Analysis.pbix
 
 ### **5. Open ML Notebook**
 ```
-notebooks/Churn Prediction.ipynb
+notebook/Churn Prediction.ipynb
 ```
 
 ### **6. Reports**
