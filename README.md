@@ -22,7 +22,7 @@ predict churn probability, and deliver actionable business insights.
 ```
 Churn_Prediction/
 ├── data/
-│ ├── raw/ ← Customer_Data.csv raw data files (CSV, Excel, etc)
+│ ├── raw/ ← Customer_Data.csv raw data file
 │ └── clean/ ← Prediction_Data.xlsx cleaned/transformed data ready for modelling
 ├── sql/
 │ ├── Upload_file.sql ← initial data load into staging
