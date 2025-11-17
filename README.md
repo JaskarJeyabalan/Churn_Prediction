@@ -34,7 +34,7 @@ Churn_Prediction/
 ├── notebook/
 │ └── Churn_Prediction.ipynb ← Jupyter notebook with EDA, modelling
 ├── reports/
-│ ├── Unified_Presentation.pptx ← full presentation of results
+│ ├── Presentation.pptx ← full presentation of results
 │ └── README.pdf ← PDF version of documentation
 ├── requirements.txt ← list of Python dependencies
 └── README.md ← this file
