@@ -1,7 +1,10 @@
 USE db_Churn
 GO
-Create View vw_ChurnData as
-	select * from prod_Churn where Customer_Status In ('Churned', 'Stayed')
 
-Create View vw_JoinData as
-	select * from prod_Churn where Customer_Status = 'Joined'
+CREATE OR ALTER VIEW vw_ChurnData AS
+    SELECT * FROM prod_Churn WHERE Customer_Status IN ('Churned', 'Stayed');
+GO
+
+CREATE OR ALTER VIEW vw_JoinData AS
+    SELECT * FROM prod_Churn WHERE Customer_Status = 'Joined';
+GO
