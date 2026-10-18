@@ -21,7 +21,7 @@ Churn_Prediction/
 │   ├── Remove_Nulls.sql                   cleaning: stg_Churn -> prod_Churn
 │   └── View_Power_BI.sql                  vw_ChurnData / vw_JoinData
 ├── power BI/
-│   ├── Churn Analysis.pbix                dashboard (see CHANGES.md for the manual refresh steps)
+│   ├── Churn Analysis.pbix                dashboard
 │   ├── Power Query.docx                   Power Query steps and DAX measures
 │   ├── Background/  Images/
 ├── notebook/
@@ -40,8 +40,8 @@ Cleaning rules in `Remove_Nulls.sql` (every NULL has a real meaning in this data
 
 | Column(s) | NULL means | Replaced with |
 |---|---|---|
-| Online_Security, Online_Backup, Device_Protection_Plan, Premium_Support, Streaming_TV/Movies/Music, Unlimited_Data | customer has no internet (1,390) | `No Internet` |
-| Multiple_Lines | customer has no phone service (622) | `No Phone Service` |
+| Online_Security, Online_Backup, Device_Protection_Plan, Premium_Support, Streaming_TV/Movies/Music, Unlimited_Data | customer has no internet (1,390) | `No` |
+| Multiple_Lines | customer has no phone service (622) | `No` |
 | Internet_Type, Value_Deal | no internet / no deal | `None` |
 | Churn_Category, Churn_Reason | customer did not churn (4,686) | `Not Applicable` |
 | Monthly_Charge < 0 | invalid value (107 rows) | median valid charge of the same Internet_Type |
@@ -93,3 +93,5 @@ pip install -r requirements.txt
 
 ## 📬 Author
 Jaskar Jeyabalan
+
+jaskarjeyabalan@gmail.com
